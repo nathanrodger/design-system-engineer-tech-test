@@ -12,6 +12,9 @@ You do not need to write tests but may be quizzed on how you would approach test
 
 The app is a dummy smart office automation app, where staff see what song is currently playing in the office, control the lights and open the front gates - see the wireframes for a suggested layout to work towards.
 
+<img width="552" alt="Screenshot 2024-11-19 at 17 06 15" src="https://github.com/user-attachments/assets/cb34e965-a471-4f77-a01d-62bb6c7c90c9">
+
+
 ## Getting started
 
 This is a React 18 app running on Vite (it was boostrapped with [the `npm create vite` command](https://vite.dev/guide/#scaffolding-your-first-vite-project)) and written in Typescript as that is the language we use, if you prefer to use Javascript then that's fine but you may need to strip the types from the code
