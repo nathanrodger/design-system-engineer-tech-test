@@ -1,12 +1,16 @@
 # Immersive Labs Design System Engineer technical test
 
-[Wireframes](https://wireframe.cc/wfuUUw)
-
 This repo provides you with a working but unstyled app for you to style with an open source design system of your choice - there is no right or wrong choice when choosing one but be prepared to explain why you chose it in the interview.
 
 We're not looking for a great looking app (but showing off your design skills would be a plus), we're more interested in seeing a component-based architecture that enables developers to work at pace within the confines of a design system, integrating accessibility will be a core part of your job at Immersive so this should be factored in where possible although we are aware that you don't have much time so feel free to use a light touch and go deeper during to the face to face interview.
 
 You do not need to write tests but may be quizzed on how you would approach testing a design system later
+
+## About the app
+
+[Wireframes](https://wireframe.cc/wfuUUw)
+
+The app is a dummy smart office automation app, where staff see what song is currently playing in the office, control the lights and open the front gates - see the wireframes for a suggested layout to work towards.
 
 ## Getting started
 
