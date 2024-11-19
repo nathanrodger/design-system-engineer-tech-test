@@ -29,6 +29,7 @@ export function App() {
 
   return (
     <div>
+      <h1>Immersive smart office</h1>
       {alert ? (
         <div className={alert.variant}>
           <div>

@@ -77,7 +77,7 @@ export function generateDummyAlertData(): IAlert | null {
 export function generateDummyRoomData(): IRoom[] {
   return [
     {
-      name: "Living Room",
+      name: "Hot desk area",
       lights: [
         {
           name: "Ceiling light",
@@ -90,10 +90,10 @@ export function generateDummyRoomData(): IRoom[] {
       ],
     },
     {
-      name: "Bedroom",
+      name: "Meeting room",
       lights: [
         {
-          name: "Bedside lamp",
+          name: "Floor lamp",
           state: getRandomLightState(),
         },
         {
@@ -103,7 +103,7 @@ export function generateDummyRoomData(): IRoom[] {
       ],
     },
     {
-      name: "Kitchen",
+      name: "Reception",
       lights: [
         {
           name: "Ceiling light",
@@ -112,7 +112,7 @@ export function generateDummyRoomData(): IRoom[] {
       ],
     },
     {
-      name: "Bathroom",
+      name: "Quiet room",
       lights: [
         {
           name: "Mirror light",
@@ -125,7 +125,7 @@ export function generateDummyRoomData(): IRoom[] {
       ],
     },
     {
-      name: "Office",
+      name: "Auditorium",
       lights: [
         {
           name: "Desk lamp",
@@ -146,7 +146,7 @@ export function generateDummyRoomData(): IRoom[] {
       ],
     },
     {
-      name: "Garage",
+      name: "Storage room",
       lights: [
         {
           name: "Ceiling light",
