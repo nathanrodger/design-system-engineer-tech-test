@@ -82,7 +82,5 @@ export function useDummyData(
     currentTrack: dummyMusicData.tracks[currentTrackIndex],
   };
 
-  console.log(randomNumberUpTo(2));
-
   return { music, rooms, alert };
 }
