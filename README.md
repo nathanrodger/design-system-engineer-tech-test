@@ -43,7 +43,7 @@ npm install
 npm run dev
 ```
 
-All the app's code is in `App.tsx`, the html used is just a placeholder and you are free to refactor as you please, the only requirement is that the Ui reflects the changes in data returned by the `useDummyData()` hook - this hook will update the data every 5 seconds unless you pass in `false` as a first argument or a time in milliseconds as a second argument - you shouldn't need to make changes to `useDummyData()` or `dummyData.ts` but can do if you feel.
+All the app's code is in `App.tsx`, the html used is just a placeholder and you are free to refactor as you please, the only requirement is that the Ui reflects the changes in data returned by the `useDummyData()` hook - this hook will update the data every 5 seconds unless you pass in `false` as a first argument or a time in milliseconds as a second argument - you shouldn't need to make changes to `useDummyData()` or `dummyData.ts` but can do if you feel the need.
 
 ```tsx
 // Default behaviour, data updates every 5 seconds
