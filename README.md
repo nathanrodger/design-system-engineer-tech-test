@@ -20,7 +20,8 @@ The app is a smart office app which Immersive staff can use to see what song is 
 - Each section should be displayed within a "card" and have consistent titles
 - Accessibility will be a core part of your job at Immersive so this should be factored in where possible although we are aware that you don't have much time so feel free to use a light touch as you will have the opportunity to discuss accessibility during the face to face interview.
 - Lights
-  - Each room has one or many lights, these can be `on`, `off` or `unreachable`, if they are unreachable then the button should be disabled and you cannot toggle their on/off state. If it is reachable, clicking a light button toggles it's on/off state and this state should be reflected in the UI
+  - Each room has one or many lights, these can be `on`, `off` or `unreachable`, if they are unreachable then the button should be disabled and you cannot toggle their on/off state. If it is reachable, it's on/off state should be reflected in the UI
+  - Representing the light's brightness in the Ui would be nice
 - Gates
   - The Open/Close button is the primary button, a secondary button displays options for latching the gate open for specific amounts of time (We have used a `select` element here but you a free to use or create something else, ideally it would look like a secondary button)
   - Clicking the Open/Close button toggles the gates' status from `open` to `closed` and vice versa - the current state should be reflected in the UI - for the sake of the test, you should presume that the gates close automatically after a set time but this functionality is not built into this mock app and you are not expected to add it.
@@ -30,7 +31,6 @@ The app is a smart office app which Immersive staff can use to see what song is 
 [Link to wireframes](https://wireframe.cc/wfuUUw)
 
 <img width="514" alt="Screenshot 2024-11-20 at 10 06 43" src="https://github.com/user-attachments/assets/94fa9fb0-1aa2-4d9f-b1e7-31d4520f7a70">
-
 
 ## Getting started
 

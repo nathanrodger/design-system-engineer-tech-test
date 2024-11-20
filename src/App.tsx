@@ -12,7 +12,7 @@ import { useDummyData } from "./hooks/useDummyData";
 import "./App.css";
 
 export function App() {
-  const { music, rooms, alert } = useDummyData();
+  const { music, rooms, alert, toggleLight } = useDummyData();
 
   const [areGatesOpen, setAreGatesOpen] = useState(false);
   const [latchTime, setLatchTime] = useState("");
@@ -96,12 +96,15 @@ export function App() {
             <li key={room.name}>
               <h3>{room.name}</h3>
               <ul>
-                {room.lights.map((light, index) => (
-                  <li key={index}>
+                {room.lights.map((light) => (
+                  <li key={light.id}>
                     <h4>{light.name}</h4>
                     <p>Reachable?: {light.state.reachable ? "Yes" : "No"}</p>
                     <p>Brightness: {light.state.brightness}%</p>
-                    <button disabled={!light.state.reachable}>
+                    <button
+                      disabled={!light.state.reachable}
+                      onClick={() => doAction("toggleLight")}
+                    >
                       {light.state.on ? "On" : "Off"}
                     </button>
                   </li>

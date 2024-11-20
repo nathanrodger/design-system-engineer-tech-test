@@ -80,10 +80,12 @@ export function generateDummyRoomData(): IRoom[] {
       name: "Hot desk area",
       lights: [
         {
+          id: "1",
           name: "Ceiling light",
           state: getRandomLightState(),
         },
         {
+          id: "2",
           name: "Floor lamp",
           state: getRandomLightState(),
         },
@@ -93,10 +95,12 @@ export function generateDummyRoomData(): IRoom[] {
       name: "Meeting room",
       lights: [
         {
+          id: "3",
           name: "Floor lamp",
           state: getRandomLightState(),
         },
         {
+          id: "4",
           name: "Ceiling light",
           state: getRandomLightState(),
         },
@@ -106,6 +110,7 @@ export function generateDummyRoomData(): IRoom[] {
       name: "Reception",
       lights: [
         {
+          id: "5",
           name: "Ceiling light",
           state: getRandomLightState(),
         },
@@ -115,10 +120,12 @@ export function generateDummyRoomData(): IRoom[] {
       name: "Quiet room",
       lights: [
         {
+          id: "6",
           name: "Mirror light",
           state: getRandomLightState(),
         },
         {
+          id: "7",
           name: "Ceiling light",
           state: getRandomLightState(),
         },
@@ -128,18 +135,22 @@ export function generateDummyRoomData(): IRoom[] {
       name: "Auditorium",
       lights: [
         {
+          id: "8",
           name: "Desk lamp",
           state: getRandomLightState(),
         },
         {
+          id: "9",
           name: "Ceiling light",
           state: getRandomLightState(),
         },
         {
+          id: "10",
           name: "Wall light",
           state: getRandomLightState(),
         },
         {
+          id: "11",
           name: "Table lamp",
           state: getRandomLightState(),
         },
@@ -149,6 +160,7 @@ export function generateDummyRoomData(): IRoom[] {
       name: "Storage room",
       lights: [
         {
+          id: "12",
           name: "Ceiling light",
           state: getRandomLightState(),
         },

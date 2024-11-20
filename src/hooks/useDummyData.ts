@@ -17,6 +17,7 @@ export interface IMusicData {
 }
 
 export interface ILight {
+  id: string;
   name: string;
   state: {
     reachable: boolean;
