@@ -1,19 +1,35 @@
 # Immersive Labs Design System Engineer technical test
 
-This repo provides you with a working but unstyled app for you to style with an open source design system of your choice - there is no right or wrong choice when choosing one but be prepared to explain why you chose it in the interview.
+This is a working but unstyled application, the goal is for you to style it using an open source design system of your choice - there is no right or wrong choice but be prepared to explain why you chose it in the interview.
 
-We're not looking for a great looking app (but showing off your design skills would be a plus), we're more interested in seeing a component-based architecture that enables developers to work at pace within the confines of a design system, integrating accessibility will be a core part of your job at Immersive so this should be factored in where possible although we are aware that you don't have much time so feel free to use a light touch and go deeper during to the face to face interview.
+You are not expected to complete every requirement - we are not looking for perfection - the goal of the test is for us to get a feel for your approach and technical abilities and to act as a conversation starter during the follow-up interview.
+
+We're not looking for a great looking app (but showing off your design skills would be a plus), we're more interested in seeing **how you approach creating a component-based architecture that enables developers to work at pace within the confines of a design system**.
 
 You do not need to write tests but may be quizzed on how you would approach testing a design system later
 
 ## About the app
 
-[Wireframes](https://wireframe.cc/wfuUUw)
+The app is a smart office automation app which Immersive staff can use to see what song is currently playing in the office, control the lights and open the front gates - see the wireframe below for a suggested layout to work towards.
 
-The app is a dummy smart office automation app, where staff see what song is currently playing in the office, control the lights and open the front gates - see the wireframes for a suggested layout to work towards.
+> All the functionality is mocked, so don't expect music to play or lights to come on!
+
+### Requirements
+
+- You should use a design tokens for things like colours, spacing, font styles etc. but how you implement them is up to you
+- Each section should be displayed within a "card" and have consistent titles
+- Accessibility will be a core part of your job at Immersive so this should be factored in where possible although we are aware that you don't have much time so feel free to use a light touch as you will have the opportunity to discuss accessibility during the face to face interview.
+- Lights
+  - Each room has one or many lights, these can be `on`, `off` or `unreachable`, if they are unreachable then the button should be disabled and you cannot toggle their on/off state. If it is reachable, clicking a light button toggles it's on/off state and this state should be reflected in the UI
+- Gates
+  - The Open/Close button is the primary button, a secondary button displays options for latching the gate open for specific amounts of time (We have used a `select` element here but you a free to ue or create something else)
+  - Clicking the Open/Close button, toggles the gates' status from `open` to `closed` - the current open state should be reflected in the UI - for the sake of the test, you should presume that the gates close automatically after a set time but this functionality is built into the app and you are not expected to add it.
+- Alerts
+  - There are three types of alert that can be displayed at the top of the app, the alert should be styled according to it's `alert.type` and you have access to icons if you want to use them via [this package](https://github.com/react-icons/react-icons)
+
+[Link to wireframes](https://wireframe.cc/wfuUUw)
 
 <img width="552" alt="Screenshot 2024-11-19 at 17 06 15" src="https://github.com/user-attachments/assets/cb34e965-a471-4f77-a01d-62bb6c7c90c9">
-
 
 ## Getting started
 
