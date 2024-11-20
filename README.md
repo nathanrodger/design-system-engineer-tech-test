@@ -29,7 +29,8 @@ The app is a smart office automation app which Immersive staff can use to see wh
 
 [Link to wireframes](https://wireframe.cc/wfuUUw)
 
-<img width="552" alt="Screenshot 2024-11-19 at 17 06 15" src="https://github.com/user-attachments/assets/cb34e965-a471-4f77-a01d-62bb6c7c90c9">
+<img width="514" alt="Screenshot 2024-11-20 at 10 06 43" src="https://github.com/user-attachments/assets/94fa9fb0-1aa2-4d9f-b1e7-31d4520f7a70">
+
 
 ## Getting started
 
