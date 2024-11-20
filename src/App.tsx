@@ -98,7 +98,7 @@ export function App() {
               <ul>
                 {room.lights.map((light, index) => (
                   <li key={index}>
-                    <p>{light.name}</p>
+                    <h4>{light.name}</h4>
                     <p>Reachable?: {light.state.reachable ? "Yes" : "No"}</p>
                     <p>Brightness: {light.state.brightness}%</p>
                     <button disabled={!light.state.reachable}>
