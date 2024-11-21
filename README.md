@@ -34,7 +34,7 @@ The app is a smart office app which Immersive staff can use to see what song is 
 
 ## Getting started
 
-This is a React 18 app running on Vite (it was boostrapped with [the `npm create vite` command](https://vite.dev/guide/#scaffolding-your-first-vite-project)) and written in Typescript as that is the language we use, if you prefer to use Javascript then that's fine but you may need to strip the types from the code
+This is a React 18 app running on Vite (it was bootstrapped with [the `npm create vite` command](https://vite.dev/guide/#scaffolding-your-first-vite-project)) and written in Typescript as that is the language we use, if you prefer to use Javascript then that's fine but you may need to strip the types from the code
 
 To run it, run:
 
