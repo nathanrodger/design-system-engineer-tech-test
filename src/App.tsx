@@ -1,18 +1,20 @@
 import { useState } from "react";
-import Alert from '@mui/material/Alert';
-import Box from '@mui/material/Box';
 import Player from './components/player/player';
 import Gates from './components/gates/gates';
-
-import {
-  FaCircleInfo,
-  FaTriangleExclamation,
-  FaCircleExclamation
- } from "react-icons/fa6";
+import IAlert from './components/i-alert/i-alert';
+import { createTheme } from "@mui/material";
 
 import { useDummyData } from "./hooks/useDummyData";
 
 import "./styles/main.scss";
+import { ThemeProvider } from "@emotion/react";
+
+const theme = createTheme({
+  typography: {
+    htmlFontSize: 10,
+    fontFamily: 'var(--body-font-family)',
+  },
+});
 
 export function App() {
   const { rooms, alert, toggleLight } = useDummyData();
@@ -24,9 +26,13 @@ export function App() {
   }
 
   return (
-    <main>
+    <ThemeProvider theme={theme}>
+      <main>
       <h1>Immersive smart office</h1>
-      {
+      <IAlert severity="success" title="test title">
+        Test alert messasge goes here
+      </IAlert>
+      {/* {
         alert &&
           <Alert color={ alert.variant } icon={
               alert.variant === "info" ? <FaCircleInfo /> :
@@ -36,7 +42,7 @@ export function App() {
               <h2>{alert.title}</h2>
               <p>{alert.description}</p>
           </Alert>
-      }
+      } */}
       <Player />
 
       <hr />
@@ -92,5 +98,6 @@ export function App() {
         </ul>
       </div>
     </main>
+    </ThemeProvider>
   );
 }

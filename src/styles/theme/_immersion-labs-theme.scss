@@ -14,6 +14,8 @@ body {
 	--color-primary: var(--primary-h) var(--primary-s) var(--primary-l);
 	--color-secondary: var(--secondary-h) var(--secondary-s) var(--secondary-l);
 	--color-accent: var(--accent-h) var(--accent-s) var(--accent-l);
+
+	--body-font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 body[data-theme="light"] {

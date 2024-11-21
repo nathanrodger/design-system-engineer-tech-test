@@ -1,0 +1,22 @@
+.alert {
+    margin-bottom: var(--alert-margin-bottom, var(--space-16));
+    border: var(--alert-border-width, 0.1rem) var(--alert-border-style, solid);
+}
+
+[data-theme="dark"] .info {
+    color: hsla(var(--alert-info-color, var(--color-white)));
+    background-color: hsla(var(--alert-info-bg-color, var(--color-info) / 0.3));
+    border-color: hsla(var(--alert-info-border-color, var(--color-white)));
+}
+
+[data-theme="dark"] .info svg {
+    fill: hsla(var(--alert-info-fill, var(--color-white)));
+}
+
+// .alert--error {
+
+// }
+
+// .alert--warning {
+
+// }
