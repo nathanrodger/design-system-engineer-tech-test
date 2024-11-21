@@ -9,7 +9,7 @@ import {
   IoAlertCircleOutline,
 } from "react-icons/io5";
 import { useDummyData } from "./hooks/useDummyData";
-import "./App.css";
+import "./styles/main.scss";
 
 export function App() {
   const { music, rooms, alert, toggleLight } = useDummyData();

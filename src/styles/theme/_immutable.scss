@@ -1,0 +1,30 @@
+:root {
+	--mono-h: 0;
+	--mono-s: 0%;
+
+	--info-h: 200;
+	--info-s: 86%;
+	--info-l: 45%;
+
+	--warning-h: 35;
+	--warning-s: 100%;
+	--warning-l: 60%;
+
+	--error-h: 1;
+	--error-s: 60%;
+	--error-l: 45%;
+
+	--color-black: var(--mono-h) var(--mono-s) 20%;
+	--color-white: var(--mono-h) var(--mono-s) 100%;
+	--color-info: var(--info-h), var(--info-s), var(--info-l);
+	--color-warning: var(--warning-h), var(--warning-s), var(--warning-l);
+	--color-error: var(--error-h) var(--error-s) var(--error-l)
+
+	--space-4: 0.4rem;
+	--space-8: 0.8rem;
+	--space-12: 1.2rem;
+	--space-16: 1.6rem;
+	--space-24: 2.4rem;
+	--space-32: 3.2rem;
+	--space-64: 6.4rem;
+}

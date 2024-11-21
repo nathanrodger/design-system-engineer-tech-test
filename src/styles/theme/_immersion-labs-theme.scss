@@ -1,0 +1,27 @@
+body {
+	--primary-h: 222;
+	--primary-s: 83%;
+	--primary-l: 57%;
+
+	--secondary-h: 235;
+	--secondary-s: 47%;
+	--secondary-l: 10%;
+
+	--accent-h: 193;
+	--accent-s: 97%;
+	--accent-l: 45%;
+
+	--color-primary: var(--primary-h) var(--primary-s) var(--primary-l);
+	--color-secondary: var(--secondary-h) var(--secondary-s) var(--secondary-l);
+	--color-accent: var(--accent-h) var(--accent-s) var(--accent-l);
+}
+
+body[data-theme="light"] {
+	--body-color: hsla(var(--color-black));
+	--body-bg-color: hsla(var(--color-white));
+}
+
+body[data-theme="dark"] {
+	--body-color: var(--color-white);
+	--body-bg-color: var(--secondary-h) var(--secondary-s) var(--secondary-l);
+}
