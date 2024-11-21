@@ -34,6 +34,8 @@ The app is a smart office app which Immersive staff can use to see what song is 
 
 ## Getting started
 
+> First, fork the repo so that you can make your own edits.
+
 This is a React 18 app running on Vite (it was bootstrapped with [the `npm create vite` command](https://vite.dev/guide/#scaffolding-your-first-vite-project)) and written in Typescript as that is the language we use, if you prefer to use Javascript then that's fine but you may need to strip the types from the code
 
 To run it, run:
@@ -55,3 +57,11 @@ const { music, rooms, alert } = useDummyData(false);
 // Data updates every 10 seconds
 const { music, rooms, alert } = useDummyData(true, 10000);
 ```
+
+## Submitting
+
+There is no need to create a production build of the apo, we will run the dev build locally as above, please ensure your fork is public so that we can access and send a link to it to your contact at Immersive.
+
+Once the interview process is over you should delete your fork
+
+Thank you for you efforts and best of luck!
