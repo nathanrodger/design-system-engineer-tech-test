@@ -1,16 +1,21 @@
 import { useState } from "react";
-import {
-  IoInformationOutline,
-} from "react-icons/io5";
-import { useDummyData } from "./hooks/useDummyData";
+import Alert from '@mui/material/Alert';
+import Box from '@mui/material/Box';
+import Player from './components/player/player';
+import Gates from './components/gates/gates';
 
-import Player from "./components/player/player";
+import {
+  FaCircleInfo,
+  FaTriangleExclamation,
+  FaCircleExclamation
+ } from "react-icons/fa6";
+
+import { useDummyData } from "./hooks/useDummyData";
 
 import "./styles/main.scss";
 
 export function App() {
   const { rooms, alert, toggleLight } = useDummyData();
-
   const [areGatesOpen, setAreGatesOpen] = useState(false);
   const [latchTime, setLatchTime] = useState("");
 
@@ -21,21 +26,22 @@ export function App() {
   return (
     <main>
       <h1>Immersive smart office</h1>
-      {alert ? (
-        <div className={alert.variant}>
-          <div>
-            <IoInformationOutline />
-            {/* or IoWarningOutline or IoAlertCircleOutline based on alert.variant */}
-            <h2>{alert.title}</h2>
-          </div>
-          <p>{alert.description}</p>
-        </div>
-      ) : null}
-      <div>
-        <Player />
-      </div>
+      {
+        alert &&
+          <Alert color={ alert.variant } icon={
+              alert.variant === "info" ? <FaCircleInfo /> :
+              alert.variant === "warning" ? <FaTriangleExclamation /> :
+              <FaCircleExclamation />
+            }>
+              <h2>{alert.title}</h2>
+              <p>{alert.description}</p>
+          </Alert>
+      }
+      <Player />
 
       <hr />
+
+      <Gates isOpen={ areGatesOpen } handleGates={ setAreGatesOpen } />
 
       <div>
         <h2>Gates</h2>
