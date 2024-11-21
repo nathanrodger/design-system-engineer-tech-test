@@ -1,11 +1,11 @@
-interface currentTrackProps {
+interface playerTrackProps {
     artist: string,
     song: string,
     album: string,
     art: string,
 }
 
-const currentTrack = ({ artist, song, album, art }: currentTrackProps) => {
+const PlayerTrack = ({ artist, song, album, art }: playerTrackProps) => {
     return (
         <div>
             <img src={art} alt={ `${artist} - ${album} artwork` } />
@@ -18,4 +18,4 @@ const currentTrack = ({ artist, song, album, art }: currentTrackProps) => {
     )
 }
 
-export default currentTrack;
+export default PlayerTrack;

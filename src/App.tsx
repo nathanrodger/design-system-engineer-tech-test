@@ -1,34 +1,25 @@
 import { useState } from "react";
 import {
-  IoPlayOutline,
-  IoPauseOutline,
-  IoPlayBackOutline,
-  IoPlayForwardOutline,
   IoInformationOutline,
-  IoWarningOutline,
-  IoAlertCircleOutline,
 } from "react-icons/io5";
 import { useDummyData } from "./hooks/useDummyData";
+
+import Player from "./components/player/player";
+
 import "./styles/main.scss";
 
 export function App() {
-  const { music, rooms, alert, toggleLight } = useDummyData();
+  const { rooms, alert, toggleLight } = useDummyData();
 
   const [areGatesOpen, setAreGatesOpen] = useState(false);
   const [latchTime, setLatchTime] = useState("");
-
-  function doAction(action: string) {
-    console.log(action);
-  }
 
   function handleLatchChange(event: React.ChangeEvent<HTMLSelectElement>) {
     setLatchTime(event.target.value);
   }
 
-  const isPlaying = music.playState === "playing";
-
   return (
-    <div>
+    <main>
       <h1>Immersive smart office</h1>
       {alert ? (
         <div className={alert.variant}>
@@ -41,27 +32,7 @@ export function App() {
         </div>
       ) : null}
       <div>
-        <h2>Music</h2>
-        <p>{isPlaying ? "Now playing" : "Up next"}:</p>
-        <div>
-          <img src={music.currentTrack.albumArt} alt="" />
-          <div>
-            <p>{music.currentTrack.title}</p>
-            <p>by {music.currentTrack.artist}</p>
-            <p>from {music.currentTrack.album}</p>
-          </div>
-        </div>
-        <div>
-          <button onClick={() => doAction("prevTrack")}>
-            <IoPlayBackOutline />
-          </button>
-          <button onClick={() => doAction("togglePlayState")}>
-            {isPlaying ? <IoPauseOutline /> : <IoPlayOutline />}
-          </button>
-          <button onClick={() => doAction("nextTrack")}>
-            <IoPlayForwardOutline />
-          </button>
-        </div>
+        <Player />
       </div>
 
       <hr />
@@ -114,6 +85,6 @@ export function App() {
           ))}
         </ul>
       </div>
-    </div>
+    </main>
   );
 }

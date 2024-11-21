@@ -1,3 +1,10 @@
 body {
 	background-color: hsla(var(--body-bg-color, #ffffff));
 }
+
+main {
+	margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--main-padding-right, var(--space-16));
+    padding-left: var(--main-padding-left, var(--space-16));
+}
