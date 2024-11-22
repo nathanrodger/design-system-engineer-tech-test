@@ -7,3 +7,8 @@ main {
 	margin-left: auto;
 	padding: var(--main-padding, var(--space-16));
 }
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}

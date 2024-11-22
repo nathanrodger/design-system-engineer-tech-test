@@ -1,0 +1,12 @@
+.image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.content {
+  padding: var(--player-track-content-padding, var(--space-8));
+}
+
+.title {
+  margin-bottom: var(--player-track-title-margin-bottom, var(--space-12));
+}

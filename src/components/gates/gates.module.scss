@@ -1,0 +1,14 @@
+.gates {
+  margin-bottom: var(--gates-margin-bottom, var(--space-16));
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--gates-header-margin-bottom, var(--space-16))
+}
+
+.header h2 {
+  margin-bottom: 0;
+}

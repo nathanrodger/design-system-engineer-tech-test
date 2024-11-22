@@ -13,3 +13,7 @@ h1 {
 h2 {
   margin-bottom: var(--h2-margin-bottom, var(--space-32))
 }
+
+p {
+  margin-bottom: var(--p-margin-bottom, var(--space-8))
+}

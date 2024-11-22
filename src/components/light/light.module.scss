@@ -1,0 +1,12 @@
+.light {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: var(--space-8);
+  // border: 1px solid #fff;
+}
+
+.light svg {
+  align-self: center;
+  justify-self: center;
+}

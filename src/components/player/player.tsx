@@ -1,4 +1,4 @@
-import Card from '@mui/material/Card';
+import ICard from '../i-card/i-card';
 import PlayerTrack from '../player-track/player-track';
 import PlayerControl from '../player-control/player-control';
 
@@ -15,12 +15,12 @@ const Player = () => {
 	return (
 		<>
 			<h2>Music</h2>
-			<Card>
+			<ICard>
 				<p>{isPlaying ? "Now playing" : "Up next"}:</p>
 				<PlayerTrack artist={music.currentTrack.artist} song={music.currentTrack.title}
 					album={music.currentTrack.album} art={music.currentTrack.albumArt} />
 				<PlayerControl isPlaying={isPlaying} handleAction={doAction} />
-			</Card>
+			</ICard>
 		</>
 	)
 }

@@ -9,10 +9,10 @@ const theme = createTheme({
       contrastText: '#ffffff'
     },
     secondary: {
-      main: '#0e1025',
-      light: '#36384f',
-      dark: '#333333',
-      contrastText: '#ffffff'
+      main: '#ededed',
+      light: '#ffffff',
+      dark: '#eeeeee',
+      contrastText: '#333333'
     },
     background: {
       default: '#0e1025',
@@ -25,6 +25,24 @@ const theme = createTheme({
     htmlFontSize: 10,
     fontFamily: 'var(--body-font-family)',
   },
+  // components: {
+  //   MuiSelect: {
+  //     styleOverrides: {
+  //       root: {
+  //         backgroundColor: '#cccccc',
+  //         color: '#fff'
+  //       }
+  //     }
+  //   },
+  //   MuiMenuItem: {
+  //     styleOverrides: {
+  //       root: {
+  //         backgroundColor: '#000000',
+  //         color: '#fff'
+  //       }
+  //     }
+  //   }
+  // }
 });
 
 export default theme;

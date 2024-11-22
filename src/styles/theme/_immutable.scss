@@ -2,7 +2,7 @@
 	--mono-h: 0;
 	--mono-s: 0%;
 
-	--color-black: hsla(var(--mono-h) var(--mono-s) 20%);
+	--color-black: var(--mono-h) var(--mono-s) 20%;
 	--color-white: var(--mono-h) var(--mono-s) 100%;
 
 	--space-4: 0.4rem;

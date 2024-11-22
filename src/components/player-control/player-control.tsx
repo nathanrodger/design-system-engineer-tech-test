@@ -15,7 +15,7 @@ interface playerControlProps {
 
 const PlayerControl = ({ isPlaying, handleAction }: playerControlProps) => {
 	return (
-		<Stack spacing={3} direction="row">
+		<Stack spacing={2} direction="row" sx={{ justifyContent: "center", padding: 2 }}>
 			<Button variant="contained" size="medium" onClick={() => handleAction("prevTrack")}>
 				<FaBackwardStep fontSize="large" />
 			</Button>
