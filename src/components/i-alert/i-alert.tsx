@@ -1,13 +1,15 @@
 import React from 'react';
+import clsx from 'clsx';
 import Alert from '@mui/material/Alert';
 import AlertTitle from '@mui/material/AlertTitle';
-import style from './i-alert.module.scss';
 
 import {
 	FaCircleInfo,
 	FaTriangleExclamation,
 	FaCircleExclamation
 } from 'react-icons/fa6';
+
+import style from './i-alert.module.scss';
 
 interface IAlertProps {
 	title: string,
@@ -16,17 +18,12 @@ interface IAlertProps {
 }
 
 const IAlert = ({title, severity, children}: IAlertProps) => {
-	// const alertIcon =
-	// 	severity === 'error' ? <FaCircleExclamation /> :
-	// 	severity === 'warning' ? <FaTriangleExclamation /> :
-	// 	<FaCircleInfo />
-
 	return (
 		<Alert severity={severity} iconMapping={{
 			success: <FaCircleInfo />,
 			warning: <FaTriangleExclamation />,
 			error: <FaCircleExclamation />
-		}} className={ style['info'] }>
+		}} className={style['alert']} variant="filled">
 			<AlertTitle>{title}</AlertTitle>
 			{children}
 		</Alert>

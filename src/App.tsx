@@ -1,20 +1,13 @@
-import { useState } from "react";
+import { useState } from 'react';
+import { ThemeProvider } from '@emotion/react';
+import { useDummyData } from './hooks/useDummyData';
+
 import Player from './components/player/player';
 import Gates from './components/gates/gates';
 import IAlert from './components/i-alert/i-alert';
-import { createTheme } from "@mui/material";
 
-import { useDummyData } from "./hooks/useDummyData";
-
-import "./styles/main.scss";
-import { ThemeProvider } from "@emotion/react";
-
-const theme = createTheme({
-  typography: {
-    htmlFontSize: 10,
-    fontFamily: 'var(--body-font-family)',
-  },
-});
+import './styles/main.scss';
+import theme from './styles/theme/immersion-labs-theme';
 
 export function App() {
   const { rooms, alert, toggleLight } = useDummyData();
@@ -28,22 +21,14 @@ export function App() {
   return (
     <ThemeProvider theme={theme}>
       <main>
-      <h1>Immersive smart office</h1>
-      <IAlert severity="success" title="test title">
-        Test alert messasge goes here
-      </IAlert>
-      {/* {
-        alert &&
-          <Alert color={ alert.variant } icon={
-              alert.variant === "info" ? <FaCircleInfo /> :
-              alert.variant === "warning" ? <FaTriangleExclamation /> :
-              <FaCircleExclamation />
-            }>
-              <h2>{alert.title}</h2>
+        <h1>Immersive smart office</h1>
+        {
+          alert &&
+            <IAlert severity={alert.variant} title={alert.title}>
               <p>{alert.description}</p>
-          </Alert>
-      } */}
-      <Player />
+            </IAlert>
+        }
+        <Player />
 
       <hr />
 

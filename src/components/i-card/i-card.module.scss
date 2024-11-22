@@ -1,0 +1,10 @@
+.card {
+  width: fit-content;
+  margin-bottom: var(--card-margin-bottom, var(--space-16));
+}
+
+// [data-theme="dark"] .card {
+//   color: hsla(--card-color, var(--color-black));
+//   background-color: hsla(--card-bg-color, var(--color-secondary));
+//   border-color: hsla(--card-border-color, (var(--color-white) / 0.5));
+// }

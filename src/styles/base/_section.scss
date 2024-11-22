@@ -4,7 +4,6 @@ body {
 
 main {
 	margin-right: auto;
-    margin-left: auto;
-    padding-right: var(--main-padding-right, var(--space-16));
-    padding-left: var(--main-padding-left, var(--space-16));
+	margin-left: auto;
+	padding: var(--main-padding, var(--space-16));
 }

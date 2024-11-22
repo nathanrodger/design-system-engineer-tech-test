@@ -7,20 +7,10 @@ body {
 	--secondary-s: 47%;
 	--secondary-l: 10%;
 
-	--accent-h: 193;
-	--accent-s: 97%;
-	--accent-l: 45%;
-
-	--color-primary: var(--primary-h) var(--primary-s) var(--primary-l);
+	--color-primary: hsla(var(--primary-h) var(--primary-s) var(--primary-l));
 	--color-secondary: var(--secondary-h) var(--secondary-s) var(--secondary-l);
-	--color-accent: var(--accent-h) var(--accent-s) var(--accent-l);
 
 	--body-font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
-
-body[data-theme="light"] {
-	--body-color: hsla(var(--color-black));
-	--body-bg-color: hsla(var(--color-white));
 }
 
 body[data-theme="dark"] {

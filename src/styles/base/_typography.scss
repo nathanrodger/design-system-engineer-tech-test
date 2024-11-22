@@ -5,3 +5,11 @@ body {
   color: hsla(var(--body-color, #333333));
   text-decoration: none;
 }
+
+h1 {
+  margin-bottom: var(--h1-margin-bottom, var(--space-40));
+}
+
+h2 {
+  margin-bottom: var(--h2-margin-bottom, var(--space-32))
+}
