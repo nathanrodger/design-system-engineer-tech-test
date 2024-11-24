@@ -1,13 +1,14 @@
 import { yellow } from '@mui/material/colors';
-import style from './light.module.scss';
-
+import Button from '@mui/material/Button';
 import {
   FaLightbulb,
 	FaRegLightbulb,
 	FaCircleExclamation
 } from 'react-icons/fa6';
 
-interface lightProps {
+import style from './light-control.module.scss';
+
+interface lightControlProps {
   name: string,
   reachable: boolean,
   brightness: number,
@@ -15,20 +16,20 @@ interface lightProps {
   handleClick: (actionName: string) => void
 }
 
-const Light = ({name, reachable, brightness, state, handleClick}: lightProps) => {
+const LightControl = ({name, reachable, brightness, state, handleClick}: lightControlProps) => {
   return (
     <li>
-      <button className={ style['light'] } disabled={!reachable} onClick={() => handleClick("toggleLight")}>
+      <Button className={ style['light'] } variant="outlined" disabled={!reachable}
+        onClick={() => handleClick("toggleLight")}>
         <h4>{name}</h4>
         {
           reachable && state ? <FaLightbulb color={ yellow['500'] } fontSize="40" opacity={ `${brightness}%` } /> :
           reachable && !state ? <FaRegLightbulb fontSize="40" /> :
           <FaCircleExclamation fontSize="40" />
         }
-        {/* <p>Brightness: {brightness}%</p> */}
-      </button>
+      </Button>
     </li>
   )
 }
 
-export default Light;
+export default LightControl;

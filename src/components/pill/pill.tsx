@@ -1,25 +1,16 @@
-import { red, green } from '@mui/material/colors';
 import style from './pill.module.scss';
 
 interface textProps {
   text: string,
-  // status: boolean
+  color: string,
+  bgColor: string,
 }
 
-// const pillTheme = {
-//   active: {
-//     '--pill-bg-color': green['A700'],
-//     '--pill-color': 'hsla(var(--color-black)',
-//   },
-//   inActive: {
-//     '--pill-bg-color': red['A700'],
-//     '--pill-color': 'hsla(var(--color-white)',
-//   }
-// }
-
-const Pill = ({text}: textProps) => {
+const Pill = ({text, color, bgColor}: textProps) => {
   return (
-    <div className={ style['pill'] }>
+    <div className={ style['pill'] } style={{
+      ['--pill-bg-color' as string]: bgColor,
+      ['--pill-color' as string]: color }}>
       { text }
     </div>
   )

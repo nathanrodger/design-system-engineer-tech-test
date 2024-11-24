@@ -1,14 +1,9 @@
-body {
-	background-color: hsla(var(--body-bg-color, #ffffff));
-}
-
 main {
-	margin-right: auto;
-	margin-left: auto;
-	padding: var(--main-padding, var(--space-16));
+	padding: var(--main-padding, var(--space-16)) 0;
 }
 
 ul {
 	list-style: none;
 	padding-left: 0;
 }
+

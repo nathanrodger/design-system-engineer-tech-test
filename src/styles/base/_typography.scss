@@ -1,8 +1,6 @@
 body {
-  font-family: var(--body-font-family, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif);
   font-size: var(--body-font-size, 1.8rem);
   font-weight: var(--body-font-weight, 400);
-  color: hsla(var(--body-color, #333333));
   text-decoration: none;
 }
 
@@ -12,6 +10,10 @@ h1 {
 
 h2 {
   margin-bottom: var(--h2-margin-bottom, var(--space-32))
+}
+
+h3 {
+  margin-bottom: var(--h2-margin-bottom, var(--space-16))
 }
 
 p {

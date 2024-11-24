@@ -12,8 +12,3 @@ body {
 
 	--body-font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
-
-body[data-theme="dark"] {
-	--body-color: var(--color-white);
-	--body-bg-color: var(--secondary-h) var(--secondary-s) var(--secondary-l);
-}

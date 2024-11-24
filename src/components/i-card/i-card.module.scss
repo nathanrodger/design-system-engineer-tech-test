@@ -1,9 +1,0 @@
-.card {
-  width: 100%;
-  margin-bottom: var(--card-margin-bottom, var(--space-16));
-}
-
-[data-theme="dark"] .card {
-  color: hsla(var(--card-color, var(--color-white)));
-  background-color: hsla(var(--card-bg-color, var(--color-black) / 0.4));
-}

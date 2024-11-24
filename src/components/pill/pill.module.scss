@@ -1,5 +1,7 @@
 .pill {
   width: fit-content;
   padding: var(--pill-padding-y, var(--space-4)) var(--pill-padding-x, var(--space-8));
+  color: var(--pill-color, hsla(var(--color-white)));
   border-radius: var(--pill-border-radius, 0.4rem);
+  background-color: var(--pill-bg-color, hsla(var(--color-black)));
 }

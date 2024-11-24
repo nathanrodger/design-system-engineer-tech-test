@@ -5,6 +5,11 @@
 
 .content {
   padding: var(--player-track-content-padding, var(--space-8));
+  margin-bottom: var(--player-track-content-margin-bottom, var(--space-16));
+}
+
+.content p {
+  margin-bottom: 0;
 }
 
 .title {
